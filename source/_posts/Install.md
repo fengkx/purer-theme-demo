@@ -1,0 +1,172 @@
+---
+title: Install
+date: 2020-03-02 02:26:01
+tags:
+---
+
+# Install dependencies
+
+```bash
+npm i hexo-asset-image # for insert image use markdown syntax
+npm i hexo-generator-json-content # for local search
+npm i hexo-renderer-markdown-it-plus # better markup
+npm i hexo-wordcount # wordcount and min2red
+npm i markdown-it-emoji # markdown-it plugin
+npm i markdown-it-mathjax # markdown-it plugin
+```
+
+# Clone theme
+
+```bash
+git clone https://github.com/fengkx/hexo-theme-purer theme/purer
+```
+
+# Config theme
+
+```yaml
+# menu
+menu:
+  Home: .
+  Archives: archives  # 归档
+  Categories: categories  # 分类
+  Tags: tags  # 标签
+  Repository: repository  # github repositories
+#  Books: books  # 豆瓣书单
+  Links: links  # 友链
+  About: about  # 关于
+
+# Enable/Disable menu icons
+menu_icons:
+  enable: true  # 是否启用导航菜单图标
+  home: icon-home
+  archives: icon-archive
+  categories: icon-folder
+  tags: icon-tag
+  repository: icon-project
+  books: icon-book
+  links: icon-friend
+  about: icon-cup
+
+
+
+site:
+  favicon: /images/favicon.ico
+
+pagination:
+  prev:
+    alwayShow: true
+  next:
+    alwayShow: true
+
+comment:
+  type: # gitalk  # 启用哪种评论系统
+  disqus:  # enter disqus shortname here
+  livere:
+    uid: # enter youyan uid
+  gitalk: # gitalk. https://gitalk.github.io/
+    owner: fengkx #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: fengkx #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: blog-comment #必须. GitHub repository.
+    ClientID:  #必须. GitHub Application Client ID.
+    ClientSecret:  #必须. GitHub Application Client `ecret.
+  valine: # Valine. https://valine.js.org
+    appid:  # your leancloud application appid
+    appkey:  # your leancloud application appkey
+    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # comment box placeholder
+    avatar: mm # gravatar style
+    meta: nick,mail,link # custom comment header
+    pageSize: 10 # pagination size
+    visitor: false # Article reading statistic https://valine.js.org/visitor.html
+
+
+github:
+  username: fengkx
+
+# wordcount
+postCount:
+  enable: true
+  wordcount: true  # 文章字数统计
+  min2read: true  # 阅读时长预计
+
+toc: true
+fancybox: true
+
+profile:
+  enabled: true # Whether to show profile bar
+#  avatar: images/avatar.jpg
+  gravatar: MyEmailAddress@example.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+  author: fengkx
+  author_title: Student & Coder
+  author_description: Having fun
+  location: Guangzhou, China
+  follow: https://github.com/fengkx
+  # Social Links
+  social:
+    links:
+      github: https://github.com/fengkx
+      telegram: https://t.me/fengkx
+      twitter: https://twitter.com/example
+      # facebook: /
+      # dribbble: /
+      # behance: https://www.behance.net/cofess
+      rss: atom.xml
+    link_tooltip: true # enable the social link tooltip, options: true, false
+
+  # My Personal Links
+  links:
+    Github: https://github.com/fengkx
+    Blog: http://www.fengkx.top
+    Email: i#fengkx.top(请将#替换成@)
+    Wechat: liang222liang
+  # My Personal Labels
+  labels:
+    - 前端
+    - Node.js
+    - Golang
+    - Linux日常使用
+  skills:
+    Git: ★★★☆☆
+    Gulp: ★★★☆☆
+    Javascript: ★★★☆☆
+    HTML+CSS: ★★★☆☆
+    Bootstrap: ★★★☆☆
+   # My Personal Works
+  works:
+   name:
+     link: http://www.example.com
+     date: 2016
+  # My Personal Projects
+  projects:
+    fengkx/NodeRSSBot: https://github.com/fengkx/NodeRSSBot
+    fengkx/translator: https://github.com/fengkx/translator
+    fengkx/cacheman-level: https://github.com/fengkx/cacheman-level
+
+
+widgets:
+#  - board
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+#widget behaivor
+show_count: true
+
+cdn:
+  katex: //cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css
+  gitment: //cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css
+  gitalk: //cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js
+  yox: //cdn.jsdelivr.net/npm/yox@1.0.0-alpha.121/dist/standard/prod/yox.min.js
+  blueimp_md5: //cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js
+  valine: //cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
+  lightgallery_css: //cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css
+  lightgallery_js: //cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js
+```
+
+# Set theme in site config
+
+Set `theme` to purer in site config file(`_config.yml`)
