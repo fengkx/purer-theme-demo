@@ -1,0 +1,317 @@
+<html  lang="en" >
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>Install | Hexo</title>
+    <meta name="description" content="Install dependencies 123456npm i hexo-asset-image # for insert image use markdown syntaxnpm i hexo-generator-json-content # for local searchnpm i hexo-renderer-markdown-it-plus # better markupnpm i h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Install">
+<meta property="og:url" content="http://yoursite.com/2020/03/02/Install/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Install dependencies 123456npm i hexo-asset-image # for insert image use markdown syntaxnpm i hexo-generator-json-content # for local searchnpm i hexo-renderer-markdown-it-plus # better markupnpm i h">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-01T18:26:01.000Z">
+<meta property="article:modified_time" content="2020-03-02T02:12:20.388Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+    
+    
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    
+
+    
+<link rel="stylesheet" href="/css/common.min.css">
+
+
+
+    
+    
+    
+    
+        <link href="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css" rel="stylesheet">
+    
+    
+    
+<link rel="stylesheet" href="/css/iconfont.min.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header class="header header-fixture">
+    <div class="profile-search-wrap flex sm:block">
+        
+        
+        <div class="profile sm:text-center md:px-1 lg:px-3 sm:pb-4 sm:pt-6">
+            <a id="avatar" href="https://github.com/fengkx" class="inline-block lg:w-16 lg:h-16 w-8 h-8 m-2" target="_blank">
+                <img src="https://www.gravatar.com/avatar/0bc83cb571cd1c50ba6f3e8a78ef1346?s=128" class="rounded-full">
+            </a>
+            <h2 id="name" class="hidden lg:block">fengkx</h2>
+            <h3 id="title" class="hidden xl:block">Student &amp; Coder</h3>
+            
+            <small id="location" class="hidden lg:block">
+                <i class="iconfont icon-map-icon"></i>
+                Guangzhou, China
+            </small>
+            
+        </div>
+        
+        <div class="search flex-1 flex lg:inline-block sm:hidden lg:px-3 lg:mt-2 lg:mb-4 lg:w-full">
+    <form id="search-form" class="my-auto flex-1 lg:border lg:border-solid lg:border-gray-200">
+        <div class="input-group table bg-gray-100 lg:bg-white w-full">
+            <input id="search-input" type="text" placeholder="Search" class="inline-block w-full bg-gray-100 lg:bg-white">
+            <span class="table-cell">
+                <button disabled>
+                    <i class="iconfont icon-search m-2"></i>
+                </button>
+            </span>
+        </div>
+    </form>
+        <script id="search-teamplate" type="text/html">
+    <div>
+        <div class="search-header bg-gray-400">
+            <input id="actual-search-input" model="keyword" ref="input" class="inline-block w-full h-10 px-2 py-1" placeholder="Search" type="text">
+        </div>
+        <div class="search-result bg-gray-200">
+            {{#each searchPosts}}
+            <a href="/{{ path }}" class="result-item block px-2 pb-3 mb-1 pt-1 hover:bg-indigo-100">
+                <i class="iconfont icon-file"></i>
+                <h1 class="result-title inline font-medium text-lg">{{ title }}</h1>
+                <p class="result-content text-gray-600 text-sm">{{{ text }}}</p>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</script>
+
+</div>
+
+        <button id="menu-toggle-btn" class="block sm:hidden p-3">
+            <i class="iconfont icon-hamburger"></i>
+        </button>
+    </div>
+    <nav id="menu-nav" class="hidden sm:flex flex-col">
+        
+        
+            <div class="menu-item menu-home">
+                <a href="/.">
+                    <i class="iconfont icon-home"></i>
+                    <span class="menu-title">Home</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-archives">
+                <a href="/archives">
+                    <i class="iconfont icon-archive"></i>
+                    <span class="menu-title">Archives</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-categories">
+                <a href="/categories">
+                    <i class="iconfont icon-folder"></i>
+                    <span class="menu-title">Categories</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-tags">
+                <a href="/tags">
+                    <i class="iconfont icon-tag"></i>
+                    <span class="menu-title">Tags</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-repository">
+                <a href="/repository">
+                    <i class="iconfont icon-project"></i>
+                    <span class="menu-title">Repository</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-links">
+                <a href="/links">
+                    <i class="iconfont icon-friend"></i>
+                    <span class="menu-title">Links</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-about">
+                <a href="/about">
+                    <i class="iconfont icon-cup"></i>
+                    <span class="menu-title">About</span>
+                </a>
+            </div>
+        
+        
+<div class="social-links lg:hidden px-6 my-2 sm:mt-48">
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://github.com/fengkx" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-github"></i>
+                <span class="menu-title hidden lg:inline">menu.github</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://t.me/fengkx" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-telegram"></i>
+                <span class="menu-title hidden lg:inline">menu.telegram</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://twitter.com/example" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-twitter"></i>
+                <span class="menu-title hidden lg:inline">menu.twitter</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="/atom.xml" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-rss"></i>
+                <span class="menu-title hidden lg:inline">menu.rss</span>
+            </a>
+        </span>
+    
+</div>
+
+
+    </nav>
+</header>
+
+        <section class="main-section">
+            
+    <main class="flex-1 px-4 py-12 md:px-5 lg:px-8 lg:py-4 relative min-h-screen">
+    <article class="content article article-archives article-type-list" itemscope="">
+        <header class="article-header">
+            
+    
+        <h1 class="article-title text-lg" itemprop="name">
+            Install
+        </h1>
+    
+
+
+
+            <p class="article-meta mb-3 text-xs">
+                <span class="article-date">
+    <i class="iconfont icon-calendar-check"></i>
+	<a href="/2020/03/02/Install/" class="article-date">
+	  <time datetime="2020-03-01T18:26:01.000Z" itemprop="datePublished">Mar 2</time>
+	</a>
+</span>
+
+                
+
+                
+
+                <span class="_partial/post-comment"><i class="icon icon-comment"></i>
+                    <a href="/2020/03/02/Install/#comments" class="article-comment-link">
+                        Comments
+                    </a>
+                </span>
+                
+    
+        <span class="post-wordcount" itemprop="wordCount">Word Count: 644(words)</span>
+    
+    
+        <span class="post-readcount" itemprop="timeRequired">Read Count: 3(minutes)</span>
+    
+
+
+            </p>
+        </header>
+        <div class="marked-body article-body">
+            <h1 id="install-dependencies"><a class="markdownIt-Anchor" href="#install-dependencies"></a> Install dependencies</h1>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-asset-image <span class="comment"># for insert image use markdown syntax</span></span><br><span class="line">npm i hexo-generator-json-content <span class="comment"># for local search</span></span><br><span class="line">npm i hexo-renderer-markdown-it-plus <span class="comment"># better markup</span></span><br><span class="line">npm i hexo-wordcount <span class="comment"># wordcount and min2red</span></span><br><span class="line">npm i markdown-it-emoji <span class="comment"># markdown-it plugin</span></span><br><span class="line">npm i markdown-it-mathjax <span class="comment"># markdown-it plugin</span></span><br></pre></td></tr></table></figure>
+<h1 id="clone-theme"><a class="markdownIt-Anchor" href="#clone-theme"></a> Clone theme</h1>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/fengkx/hexo-theme-purer theme/purer</span><br></pre></td></tr></table></figure>
+<h1 id="config-theme"><a class="markdownIt-Anchor" href="#config-theme"></a> Config theme</h1>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># menu</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">.</span></span><br><span class="line">  <span class="attr">Archives:</span> <span class="string">archives</span>  <span class="comment"># 归档</span></span><br><span class="line">  <span class="attr">Categories:</span> <span class="string">categories</span>  <span class="comment"># 分类</span></span><br><span class="line">  <span class="attr">Tags:</span> <span class="string">tags</span>  <span class="comment"># 标签</span></span><br><span class="line">  <span class="attr">Repository:</span> <span class="string">repository</span>  <span class="comment"># github repositories</span></span><br><span class="line"><span class="comment">#  Books: books  # 豆瓣书单</span></span><br><span class="line">  <span class="attr">Links:</span> <span class="string">links</span>  <span class="comment"># 友链</span></span><br><span class="line">  <span class="attr">About:</span> <span class="string">about</span>  <span class="comment"># 关于</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable/Disable menu icons</span></span><br><span class="line"><span class="attr">menu_icons:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>  <span class="comment"># 是否启用导航菜单图标</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">icon-home</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">icon-archive</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">icon-folder</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">icon-tag</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">icon-project</span></span><br><span class="line">  <span class="attr">books:</span> <span class="string">icon-book</span></span><br><span class="line">  <span class="attr">links:</span> <span class="string">icon-friend</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">icon-cup</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">site:</span></span><br><span class="line">  <span class="attr">favicon:</span> <span class="string">/images/favicon.ico</span></span><br><span class="line"></span><br><span class="line"><span class="attr">pagination:</span></span><br><span class="line">  <span class="attr">prev:</span></span><br><span class="line">    <span class="attr">alwayShow:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">next:</span></span><br><span class="line">    <span class="attr">alwayShow:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="comment"># gitalk  # 启用哪种评论系统</span></span><br><span class="line">  <span class="attr">disqus:</span>  <span class="comment"># enter disqus shortname here</span></span><br><span class="line">  <span class="attr">livere:</span></span><br><span class="line">    <span class="attr">uid:</span> <span class="comment"># enter youyan uid</span></span><br><span class="line">  <span class="attr">gitalk:</span> <span class="comment"># gitalk. https://gitalk.github.io/</span></span><br><span class="line">    <span class="attr">owner:</span> <span class="string">fengkx</span> <span class="comment">#必须. GitHub repository 所有者，可以是个人或者组织。</span></span><br><span class="line">    <span class="attr">admin:</span> <span class="string">fengkx</span> <span class="comment">#必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">blog-comment</span> <span class="comment">#必须. GitHub repository.</span></span><br><span class="line">    <span class="attr">ClientID:</span>  <span class="comment">#必须. GitHub Application Client ID.</span></span><br><span class="line">    <span class="attr">ClientSecret:</span>  <span class="comment">#必须. GitHub Application Client `ecret.</span></span><br><span class="line">  <span class="attr">valine:</span> <span class="comment"># Valine. https://valine.js.org</span></span><br><span class="line">    <span class="attr">appid:</span>  <span class="comment"># your leancloud application appid</span></span><br><span class="line">    <span class="attr">appkey:</span>  <span class="comment"># your leancloud application appkey</span></span><br><span class="line">    <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># mail notifier , https://github.com/xCss/Valine/wiki</span></span><br><span class="line">    <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">    <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">    <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">    <span class="attr">meta:</span> <span class="string">nick,mail,link</span> <span class="comment"># custom comment header</span></span><br><span class="line">    <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br><span class="line">    <span class="attr">visitor:</span> <span class="literal">false</span> <span class="comment"># Article reading statistic https://valine.js.org/visitor.html</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">github:</span></span><br><span class="line">  <span class="attr">username:</span> <span class="string">fengkx</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># wordcount</span></span><br><span class="line"><span class="attr">postCount:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">wordcount:</span> <span class="literal">true</span>  <span class="comment"># 文章字数统计</span></span><br><span class="line">  <span class="attr">min2read:</span> <span class="literal">true</span>  <span class="comment"># 阅读时长预计</span></span><br><span class="line"></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">profile:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span> <span class="comment"># Whether to show profile bar</span></span><br><span class="line"><span class="comment">#  avatar: images/avatar.jpg</span></span><br><span class="line">  <span class="attr">gravatar:</span> <span class="string">MyEmailAddress@example.com</span> <span class="comment"># Gravatar email address, if you enable Gravatar, your avatar config will be overriden</span></span><br><span class="line">  <span class="attr">author:</span> <span class="string">fengkx</span></span><br><span class="line">  <span class="attr">author_title:</span> <span class="string">Student</span> <span class="string">&amp;</span> <span class="string">Coder</span></span><br><span class="line">  <span class="attr">author_description:</span> <span class="string">Having</span> <span class="string">fun</span></span><br><span class="line">  <span class="attr">location:</span> <span class="string">Guangzhou,</span> <span class="string">China</span></span><br><span class="line">  <span class="attr">follow:</span> <span class="string">https://github.com/fengkx</span></span><br><span class="line">  <span class="comment"># Social Links</span></span><br><span class="line">  <span class="attr">social:</span></span><br><span class="line">    <span class="attr">links:</span></span><br><span class="line">      <span class="attr">github:</span> <span class="string">https://github.com/fengkx</span></span><br><span class="line">      <span class="attr">telegram:</span> <span class="string">https://t.me/fengkx</span></span><br><span class="line">      <span class="attr">twitter:</span> <span class="string">https://twitter.com/example</span></span><br><span class="line">      <span class="comment"># facebook: /</span></span><br><span class="line">      <span class="comment"># dribbble: /</span></span><br><span class="line">      <span class="comment"># behance: https://www.behance.net/cofess</span></span><br><span class="line">      <span class="attr">rss:</span> <span class="string">atom.xml</span></span><br><span class="line">    <span class="attr">link_tooltip:</span> <span class="literal">true</span> <span class="comment"># enable the social link tooltip, options: true, false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># My Personal Links</span></span><br><span class="line">  <span class="attr">links:</span></span><br><span class="line">    <span class="attr">Github:</span> <span class="string">https://github.com/fengkx</span></span><br><span class="line">    <span class="attr">Blog:</span> <span class="string">http://www.fengkx.top</span></span><br><span class="line">    <span class="attr">Email:</span> <span class="string">i#fengkx.top(请将#替换成@)</span></span><br><span class="line">    <span class="attr">Wechat:</span> <span class="string">liang222liang</span></span><br><span class="line">  <span class="comment"># My Personal Labels</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">前端</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Node.js</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Golang</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Linux日常使用</span></span><br><span class="line">  <span class="attr">skills:</span></span><br><span class="line">    <span class="attr">Git:</span> <span class="string">★★★☆☆</span></span><br><span class="line">    <span class="attr">Gulp:</span> <span class="string">★★★☆☆</span></span><br><span class="line">    <span class="attr">Javascript:</span> <span class="string">★★★☆☆</span></span><br><span class="line">    <span class="string">HTML+CSS:</span> <span class="string">★★★☆☆</span></span><br><span class="line">    <span class="attr">Bootstrap:</span> <span class="string">★★★☆☆</span></span><br><span class="line">   <span class="comment"># My Personal Works</span></span><br><span class="line">  <span class="attr">works:</span></span><br><span class="line">   <span class="attr">name:</span></span><br><span class="line">     <span class="attr">link:</span> <span class="string">http://www.example.com</span></span><br><span class="line">     <span class="attr">date:</span> <span class="number">2016</span></span><br><span class="line">  <span class="comment"># My Personal Projects</span></span><br><span class="line">  <span class="attr">projects:</span></span><br><span class="line">    <span class="attr">fengkx/NodeRSSBot:</span> <span class="string">https://github.com/fengkx/NodeRSSBot</span></span><br><span class="line">    <span class="attr">fengkx/translator:</span> <span class="string">https://github.com/fengkx/translator</span></span><br><span class="line">    <span class="attr">fengkx/cacheman-level:</span> <span class="string">https://github.com/fengkx/cacheman-level</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attr">widgets:</span></span><br><span class="line"><span class="comment">#  - board</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">category</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tag</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">tagcloud</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">recent_posts</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#widget behaivor</span></span><br><span class="line"><span class="attr">show_count:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cdn:</span></span><br><span class="line">  <span class="attr">katex:</span> <span class="string">//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css</span></span><br><span class="line">  <span class="attr">gitment:</span> <span class="string">//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css</span></span><br><span class="line">  <span class="attr">gitalk:</span> <span class="string">//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css</span></span><br><span class="line">  <span class="attr">gitalk_js:</span> <span class="string">//cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js</span></span><br><span class="line">  <span class="attr">yox:</span> <span class="string">//cdn.jsdelivr.net/npm/yox@1.0.0-alpha.121/dist/standard/prod/yox.min.js</span></span><br><span class="line">  <span class="attr">blueimp_md5:</span> <span class="string">//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js</span></span><br><span class="line">  <span class="attr">valine:</span> <span class="string">//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js</span></span><br><span class="line">  <span class="attr">lightgallery_css:</span> <span class="string">//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css</span></span><br><span class="line">  <span class="attr">lightgallery_js:</span> <span class="string">//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js</span></span><br></pre></td></tr></table></figure>
+<h1 id="set-theme-in-site-config"><a class="markdownIt-Anchor" href="#set-theme-in-site-config"></a> Set theme in site config</h1>
+<p>Set <code>theme</code> to purer in site config file(<code>_config.yml</code>)</p>
+
+        </div>
+    </article>
+    
+    <section id="comments">
+        
+    </section>
+
+
+    
+
+</main>
+
+
+<aside style="" id="sidebar" class="aside aside-fixture">
+    <div class="toc-sidebar">
+        <nav id="toc" class="article-toc">
+            <h3 class="toc-title">Catalogue</h3>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#install-dependencies"><span class="toc-number">1.</span> <span class="toc-text"> Install dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#clone-theme"><span class="toc-number">2.</span> <span class="toc-text"> Clone theme</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#config-theme"><span class="toc-number">3.</span> <span class="toc-text"> Config theme</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#set-theme-in-site-config"><span class="toc-number">4.</span> <span class="toc-text"> Set theme in site config</span></a></li></ol>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+
+        </section>
+        <footer class="hidden lg:block fixed bottom-0 left-0 sm:w-1/12 lg:w-1/6 bg-gray-100">
+    
+    <div class="footer-social-links">
+        
+            <a href="https://github.com/fengkx" target="_blank" rel="noopener">
+                <i class="iconfont icon-github"></i>
+            </a>
+        
+            <a href="https://t.me/fengkx" target="_blank" rel="noopener">
+                <i class="iconfont icon-telegram"></i>
+            </a>
+        
+            <a href="https://twitter.com/example" target="_blank" rel="noopener">
+                <i class="iconfont icon-twitter"></i>
+            </a>
+        
+            <a href="/atom.xml">
+                <i class="iconfont icon-rss"></i>
+            </a>
+        
+    </div>
+    
+</footer>
+
+        <div id="mask" class="hidden mask fixed inset-0 bg-gray-900 opacity-75 z-40"></div>
+        <div id="search-view-container" class="hidden shadow-xl"></div>
+        
+<script src="/js/dom-event.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/yox@1.0.0-alpha.121/dist/standard/prod/yox.min.js"></script>
+
+
+<script src="/js/local-search.min.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script>
+    
+<script src="/js/lg-fullscreen.min.js"></script>
+
+    
+<script src="/js/lg-zoom.min.js"></script>
+
+    
+<script src="/js/light-gallery.min.js"></script>
+
+
+
+
+    </body>
+</html>

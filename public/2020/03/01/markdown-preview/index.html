@@ -1,0 +1,360 @@
+<html  lang="en" >
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <title>Markdown Preview | Hexo</title>
+    <meta name="description" content="hello, This is Markdown Live Preview   what is Markdown? see Wikipedia  Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people “to write using a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown Preview">
+<meta property="og:url" content="http://yoursite.com/2020/03/01/markdown-preview/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hello, This is Markdown Live Preview   what is Markdown? see Wikipedia  Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people “to write using a">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-29T16:17:48.000Z">
+<meta property="article:modified_time" content="2020-02-29T16:27:11.227Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Tag1">
+<meta property="article:tag" content="Tag2">
+<meta property="article:tag" content="Tag4">
+<meta property="article:tag" content="Md">
+<meta name="twitter:card" content="summary">
+
+    
+    
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    
+
+    
+<link rel="stylesheet" href="/css/common.min.css">
+
+
+
+    
+    
+    
+    
+        <link href="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css" rel="stylesheet">
+    
+    
+    
+<link rel="stylesheet" href="/css/iconfont.min.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <header class="header header-fixture">
+    <div class="profile-search-wrap flex sm:block">
+        
+        
+        <div class="profile sm:text-center md:px-1 lg:px-3 sm:pb-4 sm:pt-6">
+            <a id="avatar" href="https://github.com/fengkx" class="inline-block lg:w-16 lg:h-16 w-8 h-8 m-2" target="_blank">
+                <img src="https://www.gravatar.com/avatar/0bc83cb571cd1c50ba6f3e8a78ef1346?s=128" class="rounded-full">
+            </a>
+            <h2 id="name" class="hidden lg:block">fengkx</h2>
+            <h3 id="title" class="hidden xl:block">Student &amp; Coder</h3>
+            
+            <small id="location" class="hidden lg:block">
+                <i class="iconfont icon-map-icon"></i>
+                Guangzhou, China
+            </small>
+            
+        </div>
+        
+        <div class="search flex-1 flex lg:inline-block sm:hidden lg:px-3 lg:mt-2 lg:mb-4 lg:w-full">
+    <form id="search-form" class="my-auto flex-1 lg:border lg:border-solid lg:border-gray-200">
+        <div class="input-group table bg-gray-100 lg:bg-white w-full">
+            <input id="search-input" type="text" placeholder="Search" class="inline-block w-full bg-gray-100 lg:bg-white">
+            <span class="table-cell">
+                <button disabled>
+                    <i class="iconfont icon-search m-2"></i>
+                </button>
+            </span>
+        </div>
+    </form>
+        <script id="search-teamplate" type="text/html">
+    <div>
+        <div class="search-header bg-gray-400">
+            <input id="actual-search-input" model="keyword" ref="input" class="inline-block w-full h-10 px-2 py-1" placeholder="Search" type="text">
+        </div>
+        <div class="search-result bg-gray-200">
+            {{#each searchPosts}}
+            <a href="/{{ path }}" class="result-item block px-2 pb-3 mb-1 pt-1 hover:bg-indigo-100">
+                <i class="iconfont icon-file"></i>
+                <h1 class="result-title inline font-medium text-lg">{{ title }}</h1>
+                <p class="result-content text-gray-600 text-sm">{{{ text }}}</p>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+</script>
+
+</div>
+
+        <button id="menu-toggle-btn" class="block sm:hidden p-3">
+            <i class="iconfont icon-hamburger"></i>
+        </button>
+    </div>
+    <nav id="menu-nav" class="hidden sm:flex flex-col">
+        
+        
+            <div class="menu-item menu-home">
+                <a href="/.">
+                    <i class="iconfont icon-home"></i>
+                    <span class="menu-title">Home</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-archives">
+                <a href="/archives">
+                    <i class="iconfont icon-archive"></i>
+                    <span class="menu-title">Archives</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-categories">
+                <a href="/categories">
+                    <i class="iconfont icon-folder"></i>
+                    <span class="menu-title">Categories</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-tags">
+                <a href="/tags">
+                    <i class="iconfont icon-tag"></i>
+                    <span class="menu-title">Tags</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-repository">
+                <a href="/repository">
+                    <i class="iconfont icon-project"></i>
+                    <span class="menu-title">Repository</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-links">
+                <a href="/links">
+                    <i class="iconfont icon-friend"></i>
+                    <span class="menu-title">Links</span>
+                </a>
+            </div>
+        
+        
+            <div class="menu-item menu-about">
+                <a href="/about">
+                    <i class="iconfont icon-cup"></i>
+                    <span class="menu-title">About</span>
+                </a>
+            </div>
+        
+        
+<div class="social-links lg:hidden px-6 my-2 sm:mt-48">
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://github.com/fengkx" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-github"></i>
+                <span class="menu-title hidden lg:inline">menu.github</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://t.me/fengkx" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-telegram"></i>
+                <span class="menu-title hidden lg:inline">menu.telegram</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="https://twitter.com/example" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-twitter"></i>
+                <span class="menu-title hidden lg:inline">menu.twitter</span>
+            </a>
+        </span>
+    
+        <span class="social-item mr-2 mb-2">
+            <a href="/atom.xml" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+                <i class="iconfont icon-rss"></i>
+                <span class="menu-title hidden lg:inline">menu.rss</span>
+            </a>
+        </span>
+    
+</div>
+
+
+    </nav>
+</header>
+
+        <section class="main-section">
+            
+    <main class="flex-1 px-4 py-12 md:px-5 lg:px-8 lg:py-4 relative min-h-screen">
+    <article class="content article article-archives article-type-list" itemscope="">
+        <header class="article-header">
+            
+    
+        <h1 class="article-title text-lg" itemprop="name">
+            Markdown Preview
+        </h1>
+    
+
+
+
+            <p class="article-meta mb-3 text-xs">
+                <span class="article-date">
+    <i class="iconfont icon-calendar-check"></i>
+	<a href="/2020/03/01/markdown-preview/" class="article-date">
+	  <time datetime="2020-02-29T16:17:48.000Z" itemprop="datePublished">Mar 1</time>
+	</a>
+</span>
+
+                
+    <span class="article-category">
+    <i class="iconfont icon-folder"></i>
+    <a class="article-category-link" href="/categories/Category1/">Category1</a> , <a class="article-category-link" href="/categories/Category1/Category2/">Category2</a> , <a class="article-category-link" href="/categories/Category1/Category2/Category4/">Category4</a> , <a class="article-category-link" href="/categories/Category1/Category2/Category4/Test/">Test</a>
+  </span>
+
+
+                
+    <span class="article-tags">
+    <i class="iconfont icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Md/" rel="tag">Md</a>, <a class="article-tag-link" href="/tags/Tag1/" rel="tag">Tag1</a>, <a class="article-tag-link" href="/tags/Tag2/" rel="tag">Tag2</a>, <a class="article-tag-link" href="/tags/Tag4/" rel="tag">Tag4</a>
+  </span>
+
+
+                <span class="_partial/post-comment"><i class="icon icon-comment"></i>
+                    <a href="/2020/03/01/markdown-preview/#comments" class="article-comment-link">
+                        Comments
+                    </a>
+                </span>
+                
+    
+        <span class="post-wordcount" itemprop="wordCount">Word Count: 83(words)</span>
+    
+    
+        <span class="post-readcount" itemprop="timeRequired">Read Count: 1(minutes)</span>
+    
+
+
+            </p>
+        </header>
+        <div class="marked-body article-body">
+            <h1 id="hello-this-is-markdown-live-preview"><a class="markdownIt-Anchor" href="#hello-this-is-markdown-live-preview"></a> hello, This is Markdown Live Preview</h1>
+<hr />
+<h2 id="what-is-markdown"><a class="markdownIt-Anchor" href="#what-is-markdown"></a> what is Markdown?</h2>
+<p>see <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener">Wikipedia</a></p>
+<blockquote>
+<p>Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people “to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)”.</p>
+</blockquote>
+<hr />
+<h2 id="usage"><a class="markdownIt-Anchor" href="#usage"></a> usage</h2>
+<ol>
+<li>Write markdown text in this textarea.</li>
+<li>Click ‘HTML Preview’ button.</li>
+</ol>
+<hr />
+<h2 id="markdown-quick-reference"><a class="markdownIt-Anchor" href="#markdown-quick-reference"></a> markdown quick reference</h2>
+<h1 id="headers"><a class="markdownIt-Anchor" href="#headers"></a> headers</h1>
+<p><em>emphasis</em></p>
+<p><strong>strong</strong></p>
+<ul>
+<li>list</li>
+</ul>
+<blockquote>
+<p>block quote</p>
+</blockquote>
+<pre><code>code (4 spaces indent)
+</code></pre>
+<p><a href="https://wikipedia.org" target="_blank" rel="noopener">links</a></p>
+<hr />
+<h2 id="changelog"><a class="markdownIt-Anchor" href="#changelog"></a> changelog</h2>
+<ul>
+<li>17-Feb-2013 re-design</li>
+</ul>
+<hr />
+<h2 id="thanks"><a class="markdownIt-Anchor" href="#thanks"></a> thanks</h2>
+<ul>
+<li><a href="https://github.com/evilstreak/markdown-js" target="_blank" rel="noopener">markdown-js</a></li>
+</ul>
+
+        </div>
+    </article>
+    
+    <section id="comments">
+        
+    </section>
+
+
+    
+
+</main>
+
+
+<aside style="" id="sidebar" class="aside aside-fixture">
+    <div class="toc-sidebar">
+        <nav id="toc" class="article-toc">
+            <h3 class="toc-title">Catalogue</h3>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hello-this-is-markdown-live-preview"><span class="toc-number">1.</span> <span class="toc-text"> hello, This is Markdown Live Preview</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#what-is-markdown"><span class="toc-number">1.1.</span> <span class="toc-text"> what is Markdown?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#usage"><span class="toc-number">1.2.</span> <span class="toc-text"> usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown-quick-reference"><span class="toc-number">1.3.</span> <span class="toc-text"> markdown quick reference</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#headers"><span class="toc-number">2.</span> <span class="toc-text"> headers</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#changelog"><span class="toc-number">2.1.</span> <span class="toc-text"> changelog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#thanks"><span class="toc-number">2.2.</span> <span class="toc-text"> thanks</span></a></li></ol></li></ol>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+
+        </section>
+        <footer class="hidden lg:block fixed bottom-0 left-0 sm:w-1/12 lg:w-1/6 bg-gray-100">
+    
+    <div class="footer-social-links">
+        
+            <a href="https://github.com/fengkx" target="_blank" rel="noopener">
+                <i class="iconfont icon-github"></i>
+            </a>
+        
+            <a href="https://t.me/fengkx" target="_blank" rel="noopener">
+                <i class="iconfont icon-telegram"></i>
+            </a>
+        
+            <a href="https://twitter.com/example" target="_blank" rel="noopener">
+                <i class="iconfont icon-twitter"></i>
+            </a>
+        
+            <a href="/atom.xml">
+                <i class="iconfont icon-rss"></i>
+            </a>
+        
+    </div>
+    
+</footer>
+
+        <div id="mask" class="hidden mask fixed inset-0 bg-gray-900 opacity-75 z-40"></div>
+        <div id="search-view-container" class="hidden shadow-xl"></div>
+        
+<script src="/js/dom-event.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/yox@1.0.0-alpha.121/dist/standard/prod/yox.min.js"></script>
+
+
+<script src="/js/local-search.min.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js"></script>
+    
+<script src="/js/lg-fullscreen.min.js"></script>
+
+    
+<script src="/js/lg-zoom.min.js"></script>
+
+    
+<script src="/js/light-gallery.min.js"></script>
+
+
+
+
+    </body>
+</html>
