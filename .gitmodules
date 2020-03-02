@@ -1,0 +1,3 @@
+[submodule "theme/purer"]
+	path = theme/purer
+	url = https://github.com/fengkx/hexo-theme-purer
