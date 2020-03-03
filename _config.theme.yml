@@ -67,6 +67,9 @@ postCount:
 toc: true
 fancybox: true
 
+footer:
+  custom: <a href = "https://netlify.com" target="_blank" rel="noopener noreferrer">Hosted by Netlify</a>
+
 profile:
   enabled: true # Whether to show profile bar
 #  avatar: images/avatar.jpg
