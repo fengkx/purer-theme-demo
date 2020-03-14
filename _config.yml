@@ -96,7 +96,6 @@ ignore:
 theme: purer 
 
 markdown:
-  highlight: true
   html: true
   xhtmlOut: true
   breaks: true
@@ -104,6 +103,10 @@ markdown:
   linkify: true
   typographer:
   quotes: “”‘’
+  anchors:
+    level: 1
+    permalink: false
+    separator: '-'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

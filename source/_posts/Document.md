@@ -52,16 +52,17 @@ cp themes/purer/_config.example.yml _config.theme.yml
 ```
 然后在构建过程之前将该文件复制到主题的根目录中。我们可以通过`npm script`来实现。改写站点目录下的`package.json`
 ```json
-"scripts": {
-    "theme": "cat ./_config.theme.yml > ./themes/purer/_config.yml ",
-    "build": "npm run theme && hexo generate",
-    "clean": "hexo clean",
-    "deploy": "npm run theme && hexo deploy",
-    "server": "npm run theme && hexo server"
-  }
+{
+  "scripts": {
+      "theme": "cat ./_config.theme.yml > ./themes/purer/_config.yml ",
+      "build": "npm run theme && hexo generate",
+      "clean": "hexo clean",
+      "deploy": "npm run theme && hexo deploy",
+      "server": "npm run theme && hexo server"
+    }
+}
 ```
 这样，我们通过`npm run build`等执行`npm scripts`时，文件将会自动更新至主题目录中。该方法也可以通过带构建的静态托管网站(例如 Netlify)或者CI实现。
-
 
 接下来我们只需要在站点配置文件中指定`theme`为`purer`
 
@@ -83,6 +84,21 @@ npm uninstall hexo-renderer-marked
 ```sh
 npm i -S hexo-renderer-markdown-it
 ```
+`hexo-renderer-markdown-it`默认不生成`h1`的锚点，所以我们需要在站点配置文件添加如下设置
+```yml
+markdown:
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  anchors:
+    level: 1
+    permalink: false
+    separator: '-'
+```
 支持从`post_assert_folder` 用 markdown 引入图片。
 ```sh
 npm i -S hexo-asset-image
@@ -98,7 +114,7 @@ npm i -S markdown-it-mathjax
 默认情况下 `[categories, tags,  repository, links, about]`页面都不会被创建。你需要在`source`目录下创建对应名称的目录并创建`index.md`。并在`front-matter`中指定`layout`
 目录结构如下
 ```plain
-.
+source
 ├── about
 │   └── index.md
 ├── categories
