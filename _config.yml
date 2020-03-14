@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://purer.netlify.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -95,10 +95,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: purer 
 
-search:
-  path: search.json
-
-markdown_it_plus:
+markdown:
   highlight: true
   html: true
   xhtmlOut: true

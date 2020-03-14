@@ -5,7 +5,6 @@ menu:
   Categories: categories  # 分类
   Tags: tags  # 标签
   Repository: repository  # github repositories
-#  Books: books  # 豆瓣书单
   Links: links  # 友链
   About: about  # 关于
 
@@ -25,6 +24,9 @@ menu_icons:
 
 site:
   favicon: /images/favicon.ico
+  site_verification:
+#    google:
+#    baidu:
 
 pagination:
   prev:
@@ -66,7 +68,7 @@ postCount:
 
 toc: true
 fancybox: true
-
+license: 'This article is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> License'
 footer:
   custom: <a href = "https://netlify.com" target="_blank" rel="noopener noreferrer">Hosted by Netlify</a>
 
