@@ -103,10 +103,28 @@ markdown:
 ```sh
 npm i -S hexo-asset-image
 ```
-支持 emjoi 和 mathjax
+支持 emjoi 和 数学公式
 ```sh
 npm i -S markdonw-it-emjoi
-npm i -S markdown-it-mathjax
+npm i -S @iktakahiro/markdown-it-katex
+```
+我们还需要加载相关的插件，合在一起就是这样的。
+```yml
+markdown:
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  anchors:
+    level: 1
+    permalink: false
+    separator: '-'
+  plugins:
+    - '@iktakahiro/markdown-it-katex'
+    - markdown-it-emjoi
 ```
 
 

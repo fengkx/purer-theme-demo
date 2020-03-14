@@ -107,6 +107,8 @@ markdown:
     level: 1
     permalink: false
     separator: '-'
+  plugins:
+    - '@iktakahiro/markdown-it-katex'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

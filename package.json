@@ -13,6 +13,7 @@
     "version": "4.2.0"
   },
   "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^3.1.0",
     "hexo": "^4.2.0",
     "hexo-asset-image": "^1.0.0",
     "hexo-generator-archive": "^1.0.0",
@@ -24,7 +25,6 @@
     "hexo-renderer-markdown-it": "^4.1.0",
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
-    "markdown-it-emoji": "^1.4.0",
-    "markdown-it-mathjax": "^2.0.0"
+    "markdown-it-emoji": "^1.4.0"
   }
 }
