@@ -50,7 +50,7 @@ git submodule add https://github.com/fengkx/hexo-theme-purer themes/purer
 ```sh
 cp themes/purer/_config.example.yml _config.theme.yml
 ```
-然后在构建过程之前将该文件复制到主题的根目录中。我们可以通过`npm script`来实现。改写站点目录下的`package.json`
+然后在构建过程之前将该文件复制到主题的根目录中。我们可以通过`npm script`来实现。改写站点目录下的`package.json`的`scripts`字段。
 ```json
 {
   "scripts": {
@@ -184,12 +184,9 @@ fengkx1:
 ```
 效果可以参考[Demo](https://www.fengkx.top/links/)
 
-
-
-
 # 本地搜索
 
-首先安装`hexo-generator-json-content`
+需要安装`hexo-generator-json-content`
 ```sh
 npm i -S hexo-generator-json-content
 ```
@@ -205,7 +202,7 @@ npm i -S hexo-generator-json-content
 
 ## site
 ### favicon
-站点 favicon，相对`source`或`theme`
+站点 favicon，相对`source`或主题根目录下的`source`
 例如`/images.fvicon.ico`相当于在`source/images/favicon.ico`中找。
 
 ### site_verfication
@@ -216,13 +213,13 @@ Google 或 Baidu 提供的 HTML meta 验证。形如
 将 content 里的内容粘贴到对应的属性中。
 
 ## pagination
-prev， next 是否总是显示，默认为 true。仅当多于一页时有效。
+prev， next 是否总是显示，默认为 `true`。仅当多于一页时有效。
 
 ## comment
 
 ### type
 选择启用哪一种评论系统。留空则不启用。
-你可以通过`front-matter`的`cooment: boolean`控制具体一篇 post 是否开启评论。默认开启。
+你可以通过`front-matter`的`comment: boolean`控制具体一篇 post 是否开启评论。默认开启。
 
 ## github
 ### username
