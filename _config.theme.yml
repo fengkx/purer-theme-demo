@@ -27,6 +27,8 @@ site:
   site_verification:
 #    google:
 #    baidu:
+  google_analytics: UA-103237573-2
+
 
 pagination:
   prev:
@@ -66,6 +68,7 @@ postCount:
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计
 
+search: true # enable local search
 toc: true
 fancybox: true
 license: 'This article is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a> License'

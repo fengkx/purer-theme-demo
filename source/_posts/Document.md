@@ -212,6 +212,9 @@ Google 或 Baidu 提供的 HTML meta 验证。形如
 ```
 将 content 里的内容粘贴到对应的属性中。
 
+### google_analytics
+在 Google Analytics 找到跟踪 ID(一般是以 UA- 开头)填入。留空不启用。
+
 ## pagination
 prev， next 是否总是显示，默认为 `true`。仅当多于一页时有效。
 

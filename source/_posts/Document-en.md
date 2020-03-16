@@ -212,6 +212,9 @@ HTML meta verification provided by Google or Baidu such as
 ```
 Paset the string in content into the corresponding property.
 
+### google_analytics
+Set a track ID provided by Google Analytics. Disabled when empty.
+
 ## pagination
 prev， next whether always show the button，`true` by default. Only work when there is more than one page.
 
