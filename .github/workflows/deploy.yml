@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: Depoly
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout master'
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+      - name: 'Install dependencies'
+        run: 'npm install'
+      - name: 'Build public'
+        run: 'npm run build'
+      - name: 'Deploy to zeit now'
+        run: 'npx now -c -t ${{ secrets.NOW_TOKEN }} -p public'
