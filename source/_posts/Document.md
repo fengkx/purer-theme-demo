@@ -105,7 +105,7 @@ npm i -S hexo-asset-image
 ```
 支持 emjoi 和 数学公式
 ```sh
-npm i -S markdonw-it-emjoi
+npm i -S markdown-it-emjoi
 npm i -S @iktakahiro/markdown-it-katex
 ```
 我们还需要加载相关的插件，合在一起就是这样的。
