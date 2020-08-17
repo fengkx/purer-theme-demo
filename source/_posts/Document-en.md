@@ -105,7 +105,7 @@ npm i -S hexo-asset-image
 ```
 For emjoi and mathematical formula
 ```sh
-npm i -S markdonw-it-emjoi
+npm i -S markdown-it-emjoi
 npm i -S @iktakahiro/markdown-it-katex
 ```
 We need to load some plugins. End up we got thing like this.
