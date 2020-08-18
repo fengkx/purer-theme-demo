@@ -103,9 +103,9 @@ markdown:
 ```sh
 npm i -S hexo-asset-image
 ```
-支持 emjoi 和 数学公式
+支持 emoji 和 数学公式
 ```sh
-npm i -S markdown-it-emjoi
+npm i -S markdown-it-emoji
 npm i -S @iktakahiro/markdown-it-katex
 ```
 我们还需要加载相关的插件，合在一起就是这样的。
@@ -124,7 +124,7 @@ markdown:
     separator: '-'
   plugins:
     - '@iktakahiro/markdown-it-katex'
-    - markdown-it-emjoi
+    - markdown-it-emoji
 ```
 
 
