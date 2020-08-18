@@ -103,9 +103,9 @@ For add image using markdown from `post_assert_folder`
 ```sh
 npm i -S hexo-asset-image
 ```
-For emjoi and mathematical formula
+For emoji and mathematical formula
 ```sh
-npm i -S markdown-it-emjoi
+npm i -S markdown-it-emoji
 npm i -S @iktakahiro/markdown-it-katex
 ```
 We need to load some plugins. End up we got thing like this.
@@ -124,7 +124,7 @@ markdown:
     separator: '-'
   plugins:
     - '@iktakahiro/markdown-it-katex'
-    - markdown-it-emjoi
+    - markdown-it-emoji
 ```
 
 
