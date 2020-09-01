@@ -16,3 +16,9 @@ $B=\begin{bmatrix} 4 & 3 & 6 \\ 1 & -2 & 3 \end{bmatrix}$
 $\begin{cases}2\times\left( 4t_{1}+3t_{2}+6t_{3}\right) +3\left( t_{i}-2t_{2}+3t_{3}\right) =a_{1}\\4t_{1}+3t_{2}+6t_{3}+5\times\left( t_{1}-2t_{2}+3t_{3}\right) =a_{2}\end{cases}$
 
 
+# Text
+
+$\overline{R_D}$
+
+$\underline{R_D}$
+
