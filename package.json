@@ -7,7 +7,8 @@
     "build": "npm run theme && hexo generate",
     "clean": "hexo clean",
     "deploy": "npm run theme && hexo deploy",
-    "server": "npm run theme && hexo server"
+    "server": "npm run theme && hexo server",
+    "postinstall": "npx patch-package"
   },
   "hexo": {
     "version": "5.2.0"
@@ -15,7 +16,6 @@
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.1",
     "hexo": "^5.2.0",
-    "hexo-asset-image": "^1.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
