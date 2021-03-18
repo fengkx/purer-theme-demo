@@ -8,7 +8,7 @@
     "clean": "hexo clean",
     "deploy": "npm run theme && hexo deploy",
     "server": "npm run theme && hexo server",
-    "postinstall": "npx exec patch-package"
+    "postinstall": "npm exec patch-package"
   },
   "hexo": {
     "version": "5.4.0"
