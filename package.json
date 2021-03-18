@@ -8,10 +8,10 @@
     "clean": "hexo clean",
     "deploy": "npm run theme && hexo deploy",
     "server": "npm run theme && hexo server",
-    "postinstall": "npx patch-package"
+    "postinstall": "npx exec patch-package"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.0"
   },
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.1",
