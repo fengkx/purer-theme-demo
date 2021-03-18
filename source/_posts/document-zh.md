@@ -2,7 +2,6 @@
 title: 文档
 date: 2020-03-14 11:54:24
 tags: [Doc]
-permalink: document-zh
 ---
 
 # 基本概念
