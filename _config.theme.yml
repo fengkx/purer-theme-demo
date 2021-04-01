@@ -1,16 +1,16 @@
 # menu
 menu:
   Home: .
-  Archives: archives  # 归档
-  Categories: categories  # 分类
-  Tags: tags  # 标签
-  Repository: repository  # github repositories
-  Links: links  # 友链
-  About: about  # 关于
+  Archives: archives # 归档
+  Categories: categories # 分类
+  Tags: tags # 标签
+  Repository: repository # github repositories
+  Links: links # 友链
+  About: about # 关于
 
 # Enable/Disable menu icons
 menu_icons:
-  enable: true  # 是否启用导航菜单图标
+  enable: true # 是否启用导航菜单图标
   home: icon-home
   archives: icon-archive
   categories: icon-folder
@@ -20,15 +20,12 @@ menu_icons:
   links: icon-friend
   about: icon-cup
 
-
-
 site:
   favicon: /images/favicon.ico
   site_verification:
-#    google:
-#    baidu:
+  #    google:
+  #    baidu:
   google_analytics: UA-103237573-2
-
 
 pagination:
   prev:
@@ -38,18 +35,18 @@ pagination:
 
 comment:
   type: # gitalk  # 启用哪种评论系统
-  disqus:  # enter disqus shortname here
+  disqus: # enter disqus shortname here
   livere:
     uid: # enter youyan uid
   gitalk: # gitalk. https://gitalk.github.io/
     owner: fengkx #必须. GitHub repository 所有者，可以是个人或者组织。
     admin: fengkx #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
     repo: blog-comment #必须. GitHub repository.
-    ClientID:  #必须. GitHub Application Client ID.
-    ClientSecret:  #必须. GitHub Application Client `ecret.
+    ClientID: #必须. GitHub Application Client ID.
+    ClientSecret: #必须. GitHub Application Client `ecret.
   valine: # Valine. https://valine.js.org
-    appid:  # your leancloud application appid
-    appkey:  # your leancloud application appkey
+    appid: # your leancloud application appid
+    appkey: # your leancloud application appkey
     notify: false # mail notifier , https://github.com/xCss/Valine/wiki
     verify: false # Verification code
     placeholder: Just go go # comment box placeholder
@@ -58,15 +55,14 @@ comment:
     pageSize: 10 # pagination size
     visitor: false # Article reading statistic https://valine.js.org/visitor.html
 
-
 github:
   username: fengkx
 
 # wordcount
 postCount:
   enable: true
-  wordcount: true  # 文章字数统计
-  min2read: true  # 阅读时长预计
+  wordcount: true # 文章字数统计
+  min2read: true # 阅读时长预计
 
 search: true # enable local search
 toc: true
@@ -77,7 +73,7 @@ footer:
 
 profile:
   enabled: true # Whether to show profile bar
-#  avatar: images/avatar.jpg
+  #  avatar: images/avatar.jpg
   gravatar: MyEmailAddress@example.com # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: fengkx
   author_title: Student & Coder
@@ -92,7 +88,7 @@ profile:
       twitter: https://twitter.com/example
       # facebook: /
       # dribbble: /
-#      behance: https://www.behance.net/cofess
+      #      behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
 
@@ -114,11 +110,11 @@ profile:
     Javascript: ★★★☆☆
     HTML+CSS: ★★★☆☆
     Bootstrap: ★★★☆☆
-   # My Personal Works
+    # My Personal Works
   works:
-   name:
-     link: http://www.example.com
-     date: 2016
+    name:
+      link: http://www.example.com
+      date: 2016
   # My Personal Projects
   projects:
     fengkx/NodeRSSBot: https://github.com/fengkx/NodeRSSBot
@@ -127,7 +123,7 @@ profile:
     fengkx/hexo-theme-purer: https://github.com/fengkx/hexo-theme-purer
 
 widgets:
-#  - board
+  #  - board
   - category
   - tag
   - tagcloud
@@ -142,8 +138,8 @@ cdn:
   gitment: //cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css
   gitalk: //cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css
   gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js
-  yox: //cdn.jsdelivr.net/npm/yox@1.0.0-alpha.121/dist/standard/prod/yox.min.js
   blueimp_md5: //cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js
   valine: //cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js
   lightgallery_css: //cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/css/lightgallery.min.css
   lightgallery_js: //cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/dist/js/lightgallery.min.js
+  aplayer: //cdn.jsdelivr.net/npm/svelte-aplayer/dist/wc/svelte-aplayer.umd.js
