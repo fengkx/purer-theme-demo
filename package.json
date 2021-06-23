@@ -11,19 +11,20 @@
     "postinstall": "npm exec patch-package"
   },
   "hexo": {
-    "version": "5.4.0"
+    "version": "5.4.2"
   },
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.1",
-    "hexo": "^5.2.0",
+    "hexo": "^5.4.2",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-json-content": "^4.2.3",
+    "hexo-generator-search-index": "*",
     "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-markdown-it": "^5.0.0",
-    "hexo-server": "^2.0.0",
+    "hexo-server": "^3.0.0",
     "hexo-wordcount": "^6.0.1",
     "markdown-it-emoji": "^2.0.0"
   }
